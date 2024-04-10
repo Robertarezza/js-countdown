@@ -4,6 +4,13 @@
     margin: 0;
 }
 
+.wrapper {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+
 .timer {
     border: 1px solid black;
     height: 50%;
@@ -14,10 +21,34 @@
     margin: 20px auto;
     display: flex;
     align-items: center;
+    justify-items: center;
+ 
 }
 
 #second {
     margin: 0 auto;
     text-align: center;
-    font-size: 200px;
+    font-size: 150px;
+}
+
+#second {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 50px;
+}
+
+#avvio {
+    margin: 20px auto;
+    width: 20%;
+    background-color: brown;
+    padding: 5px 0;
+    border-radius: 14px;
+    
+}
+#message {
+  display: none;
+}
+
+.happy {
+    display: block;
 }
