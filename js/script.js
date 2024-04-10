@@ -5,28 +5,14 @@
 
 let seconds = 10;
 let happyNewHear = document.getElementById("message");
-
+let startCount;
 const countDown = document.getElementById("avvio");
 
 prinTime(seconds)
 console.log(seconds);
 
-countDown.addEventListener("click", function(){
-let count = setInterval(function(){
-    if(seconds > 1){
-        seconds--;
-        console.log(seconds);
-    }else {
-        happyNewHear.classList.add("happy");
-        seconds = happyNewHear.innerText;
-        console.log(seconds);
-        //console.log(happyNewHear.innerText);
-        clearInterval(count);
-        
-    }
-    prinTime(seconds)
+countDown.addEventListener("click", startCountdown);
+
     
-   
-}, 1000)
-})
+countDown.addEventListener("click", restartCountdown);
 

@@ -47,8 +47,14 @@
 }
 #message {
   display: none;
+  color: brown;
+  
 }
 
 .happy {
     display: block;
+    font-style: italic;
+    font-weight: bold;
+    color: brown;
+    
 }
