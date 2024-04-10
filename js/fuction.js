@@ -1,5 +1,5 @@
 /**
- * Description
+ * Description: stampa 
  * @param {number} s
  */
 function prinTime(s) {
@@ -7,6 +7,10 @@ function prinTime(s) {
 }
 
 
+/**
+ * Description: start al countdown
+
+ */
 function startCountdown() {
      startCount = setInterval(function(){
     if(seconds > 1){
@@ -26,6 +30,10 @@ function startCountdown() {
 }, 1000)
 }
 
+
+/**
+ * Description: fai ripartire il count down
+ */
 function restartCountdown() {
     // Ferma il countdown attuale, se esiste
     clearInterval(startCount);
